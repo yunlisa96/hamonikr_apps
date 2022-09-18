@@ -4,9 +4,11 @@ import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Setter
 @Getter
+@ToString
 public class AppsVO {
 
   private long seq;
@@ -19,4 +21,5 @@ public class AppsVO {
   private String app_link;
   private Timestamp rgstr_date;
   private Timestamp updt_date;
+  private String keyword;
 }

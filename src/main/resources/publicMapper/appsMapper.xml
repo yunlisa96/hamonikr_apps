@@ -30,6 +30,18 @@
       )
 	</insert>
 
+  <select id = "appslist" resultType="com.hamonikr.apps.AppsVO">
+    select * from tb_apps_list 
+    <if test="keyword != null">
+    where app_name like CONCAT('%', #{keyword}, '%')
+    </if>
+    order by rgstr_date desc
+  </select>
+
+  <select id = "appsdetail" parameterType="com.hamonikr.apps.AppsVO" resultType="com.hamonikr.apps.AppsVO">
+    select * from tb_apps_list where seq = #{seq}
+  </select>
+
 <!-- 
 	<insert id="addproduct" parameterType="com.example.demo.product.Product">
 		INSERT INTO tb_product

@@ -115,6 +115,7 @@ function register(){
     success : function(data) {
       if(data == "SUCCESS"){
         alert("등록되었습니다.");
+        location.reload();
       }else{
         alert("실패하였습니다.");
       }

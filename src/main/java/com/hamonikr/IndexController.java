@@ -8,7 +8,7 @@ public class IndexController {
 
   @RequestMapping("")
   public String redirect() {
-    return "redirect:/apps/register";
+    return "redirect:/apps/list";
   }
   
 }

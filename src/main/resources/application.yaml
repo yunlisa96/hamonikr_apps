@@ -10,6 +10,7 @@ spring:
     hikari:
       jndi-name: jdbc/postgresqldb
       driver-class-name: org.postgresql.Driver
+      # jdbc-url: jdbc:postgresql://106.254.251.74:25433/yunjidb
       jdbc-url: jdbc:postgresql://localhost:5432/hamonikr_apps
       username: apps
       password: exitem08
